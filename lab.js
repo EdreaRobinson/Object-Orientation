@@ -6,6 +6,11 @@
 
 //Code here
 
+let me = {
+  name: "Edrea",
+  age: 42
+}
+
 
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
@@ -17,6 +22,13 @@
 
 //Code here
 
+let dog = {
+  name: "Tyson",
+  color: "black",
+  age: 7,
+  goodBoy: true
+}
+
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
@@ -24,12 +36,16 @@
 
 //Code here
 
+console.log(dog.name)
+
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
+
+console.log(dog['color'])
 
 
 
@@ -41,12 +57,27 @@
 
 //Code here
 
+let favoriteThings = {
+  band: "Outkast",
+  food: "seafood",
+  person: "Cameron",
+  book: "To Kill a Mockingbird",
+  movie: "Dirty Dancing",
+  holiday: "Christmas"
+}
+
 
 /*
-  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
+  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key 
+  named 'show' with the value being your favorite show.
 */
 
 //Code here
+
+favoriteThings.car = "Audi Q8"
+favoriteThings.show = "New Girl"
+
+console.log(favoriteThings.car)
 
 
 /*
@@ -55,6 +86,12 @@
 */
 
 //Code here
+
+
+  favoriteThings.food = "Chicken Nuggets"
+  favoriteThings.book = "Harry Potter"
+
+console.log(favoriteThings.food)
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
@@ -74,6 +111,11 @@ var carDetails = {
 
 //Code Here
 
+const {color} = carDetails
+const {make} = carDetails
+const {model} = carDetails
+const {year} = carDetails
+
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -86,12 +128,15 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
+
+  const {firstName} = greeting
+  const {lastName} = greeting
+  const {title} = greeting
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
@@ -105,6 +150,8 @@ function greeting( obj ) {
 */
 
 //Code Here
+
+function totalPopulation
 
 
 
