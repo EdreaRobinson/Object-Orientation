@@ -129,15 +129,18 @@ const {year} = carDetails
 function greeting( obj ) {
   //Code Here
 
-  const {firstName} = greeting
-  const {lastName} = greeting
-  const {title} = greeting
-  
+  var obj = {
+    first: "Edrea",
+    family: "Robinson",
+    role: "Mrs.",
+  }
+  let {first: firstName, family: lastName, role: title} = obj
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
+console.log(greeting())
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
@@ -151,7 +154,21 @@ function greeting( obj ) {
 
 //Code Here
 
-function totalPopulation
+function totalPopulation(states) {
+  var states = {
+    utah: 4000000,
+    california: 10000000,
+    texas: 5000000,
+    arizona: 7000000
+  }
+
+  let {utah: uth, california: cal, texas: txs, arizona: arz} = states
+  let statesTotal = uth + cal + txs + arz 
+  return statesTotal
+}
+
+console.log(totalPopulation())
+
 
 
 
@@ -167,6 +184,20 @@ function totalPopulation
 
 //Code Here
 
+function ingredients(groceries) {
+  array = []
+  
+  var groceries = {
+    carb: "bread",
+    fat: "butter",
+    protein: 'chicken'
+  }
+  
+  let {carb: totalCarb, fat: totalFat, protein: totalProtein} = groceries
+  array.push(totalCarb, totalFat, totalProtein)
+return array
+}
+ console.log(ingredients())
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -189,6 +220,10 @@ var user = {
 
 //Code Here
 
+user.name = 'Bryan G. Smith'
+user.email = 'bryan.smith@devmounta.in'
+
+console.log(user.name)
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -197,6 +232,7 @@ var user = {
 
 //Code Here
 
+delete user.age
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -206,6 +242,18 @@ var user = {
 */
 
 //Code here
+
+class Cat {
+  constructor(name, age, color){
+    this.name = name;
+    this.age = age;
+    this.color = color;
+  } 
+}
+
+let cat1 = new Cat('Frosty', 5, 'white')
+
+console.log(cat1.name, cat1.age, cat1.color)
 
 
 
